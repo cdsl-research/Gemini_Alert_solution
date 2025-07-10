@@ -14,12 +14,12 @@
 ## 概要
 このFlaskアプリは，Alertmanagerなどから送られてきたアラート情報をGemini APIに渡し，対処スクリプト（bash）を自動生成するWebhookエンドポイントです．
 
-app.py
+### app.py
 '/alert' エンドポイントを持つ Webhook サーバー
 主な機能は，Alertmanagerなどから送信されるアラートの情報（JSON形式）を受信し，その内容をもとにGoogle Gemini APIに対処方法の提案を依頼を行う．
 受信したアラートの情報はプロンプトとして整形され，Geminiに送信される．Geminiからの応答の中からBashスクリプトを自動的に抽出し，fix_issue.shのファイル名で保存される．
 
-requirements.txt
+### requirements.txt
 'app.py'の実行に必要なPythonパッケージが記述されている．
 
 ## 注意点
