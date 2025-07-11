@@ -28,12 +28,26 @@
 - Gemini APIの利用にはAPIキーが必要である，APIの利用料金や制限が発生する可能性があります．使用前に必ず確認してください．
 
 ## 使用例
-まずはGemini APIキーの設定をします．
-export GEMINI_APIKEY="your-api-key"
+今回は以下のコマンドを実行して仮想環境で説明します．
+```
+$ python3 -m venv gemini
+c0a22169@redmine-test:~$
+```
+```
+$ source gemini/bin/activate
+(gemini) c0a22169@redmine-test:~$
+```
+
+仮想環境の準備が出来たら，Gemini APIキーの設定をします．
+```
+$ export GEMINI_APIKEY="your-api-key"
+(gemini) c0a22169@redmine-test:~$
+```
+app.pyを実行します．
 
 ```
-(gemini) c0a22169@redmine-test:~/gemini_alert$ python app5.py 
- * Serving Flask app 'app5'
+(gemini) c0a22169@redmine-test:~/gemini_alert$ python app.py 
+ * Serving Flask app 'app'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on all addresses (0.0.0.0)
@@ -117,3 +131,6 @@ c0a22169@redmine-test:~$
 app.py  fix_issue.sh  requirements.txt
 (gemini) c0a22169@redmine-test:~/git$
 ```
+
+## おわりに
+今回はGeminiを使ってアラートが通知された時の対処をサポートするソフトウェアを作成しました．生成AIに依存してる部分もあるのでまだまだ改善が必要です．
