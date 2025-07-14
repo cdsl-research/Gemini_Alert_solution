@@ -126,9 +126,9 @@ echo "Check log file: ${LOGFILE}"
 c0a22169@redmine-test:~$
 ```
 上記の出力内容の
-```bashから
+\```bashから
 
-```
+\```
 までのコマンドがfix_issue.shとして保存されます．
 
 
