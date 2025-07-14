@@ -125,6 +125,13 @@ echo "Check log file: ${LOGFILE}"
 
 c0a22169@redmine-test:~$
 ```
+上記の出力内容の
+```bashから
+
+```
+までのコマンドがfix_issue.shとして保存されます．
+
+
 そうすると作業しているディレクトリにfix_issue.shとして保存されていればOKです．
 ```
 (gemini) c0a22169@redmine-test:~/git$ ls
